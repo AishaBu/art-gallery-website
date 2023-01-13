@@ -1,0 +1,100 @@
+/*Global Variables*/
+:root{
+    --big-shoulders-font:'Big Shoulders Display', cursive;
+    --outfit-light-font:  'Outfit', sans-serif;
+    --almost-black-color: #151515; 
+    --dark-gray-color: #444444;
+    --white-color: #FFFFFF;
+    --gold-color: #D5966C;
+   
+}
+
+/*CSS Resets*/
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+}
+
+/*Modern Art Gallery Section*/
+#hero-image-old-woman{
+    width: 100%;   
+}
+
+/*Heading Title*/
+h1{
+   font-family: var(--big-shoulders-font);
+   color: var(--almost-black-color);
+   font-size: 60px;
+   text-transform: uppercase;
+   position: relative;
+   top: -10px;
+   line-height: 55px;
+   
+}
+
+.subtext-par{
+    font-family: var(--outfit-light-font);
+    color: var(--dark-gray-color);
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    top: -20px;
+    width: 343px;
+}
+
+/*Our Location Bar*/
+#location-bar{
+    width: 204px;
+    height: 72px;
+    background-color:var(--almost-black-color);
+}
+
+#location-bar,#location-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#our-location-text{
+    color: var(--white-color);   
+    font-family:  var(--big-shoulders-font);
+    font-weight:900;
+    font-size: 20px;
+    letter-spacing: 3.64px;
+    text-transform: uppercase;
+    position: relative;
+    left: 30px;
+}
+
+#location-arrow{
+    width: 56px;
+    height: 72px;
+    background-color: var(--gold-color);
+    position: relative;
+    left: 56px;
+}
+
+/*Day At Gallery Section*/
+#canvas-walls-image{
+    width: 100%;
+    height: 320px;   
+    position: relative;
+    top: 60px;
+}
+
+#your-day-at-gallery-title{
+    font-family: var(--big-shoulders-font);
+    color: var(--almost-black-color);
+    font-size: 50px;
+    line-height: 45px;
+    position: relative;
+    top: 40px;
+    text-transform: uppercase;
+}
