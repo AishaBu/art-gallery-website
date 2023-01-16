@@ -1,100 +1,213 @@
 /*Global Variables*/
-:root{
-    --big-shoulders-font:'Big Shoulders Display', cursive;
-    --outfit-light-font:  'Outfit', sans-serif;
-    --almost-black-color: #151515; 
-    --dark-gray-color: #444444;
-    --white-color: #FFFFFF;
-    --gold-color: #D5966C;
-   
+:root {
+  --big-shoulders-font: "Big Shoulders Display", cursive;
+  --outfit-light-font: "Outfit", sans-serif;
+  --almost-black-color: #151515;
+  --dark-gray-color: #444444;
+  --white-color: #ffffff;
+  --gold-color: #d5966c;
 }
 
 /*CSS Resets*/
-body, html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-main{
-    display: flex;
-    flex-direction: column; 
+/*Main Content*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Modern Art Gallery Section*/
-#hero-image-old-woman{
-    width: 100%;   
+#hero-old-woman-image {
+  width: 100%;
 }
 
 /*Heading Title*/
-h1{
-   font-family: var(--big-shoulders-font);
-   color: var(--almost-black-color);
-   font-size: 60px;
-   text-transform: uppercase;
-   position: relative;
-   top: -10px;
-   line-height: 55px;
-   
+h1 {
+  font-family: var(--big-shoulders-font);
+  color: var(--almost-black-color);
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 55px;
 }
 
-.subtext-par{
-    font-family: var(--outfit-light-font);
-    color: var(--dark-gray-color);
-    font-size: 18px;
-    line-height: 28px;
-    position: relative;
-    top: -20px;
-    width: 343px;
+/*Hero subtext*/
+.hero-subtext-par {
+  font-family: var(--outfit-light-font);
+  color: var(--dark-gray-color);
+  font-size: 18px;
+  line-height: 28px;
+  width: 343px;
 }
 
 /*Our Location Bar*/
-#location-bar{
-    width: 204px;
-    height: 72px;
-    background-color:var(--almost-black-color);
+#location-bar {
+  width: 204px;
+  height: 72px;
+  background-color: var(--almost-black-color);
 }
 
-#location-bar,#location-arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+#location-bar,
+#location-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#our-location-text{
-    color: var(--white-color);   
-    font-family:  var(--big-shoulders-font);
-    font-weight:900;
-    font-size: 20px;
-    letter-spacing: 3.64px;
-    text-transform: uppercase;
-    position: relative;
-    left: 30px;
+#our-location-text {
+  color: var(--white-color);
+  font-family: var(--big-shoulders-font);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: 30px;
 }
 
-#location-arrow{
-    width: 56px;
-    height: 72px;
-    background-color: var(--gold-color);
-    position: relative;
-    left: 56px;
+#location-arrow {
+  width: 56px;
+  height: 72px;
+  background-color: var(--gold-color);
+  position: relative;
+  left: 56px;
 }
 
 /*Day At Gallery Section*/
-#canvas-walls-image{
-    width: 100%;
-    height: 320px;   
-    position: relative;
-    top: 60px;
+#canvas-walls-image {
+  width: 343px;
+  height: 320px;
+  position: relative;
+  top: 70px;
+  object-fit: contain;
+  margin: auto;
 }
 
-#your-day-at-gallery-title{
-    font-family: var(--big-shoulders-font);
-    color: var(--almost-black-color);
-    font-size: 50px;
-    line-height: 45px;
-    position: relative;
-    top: 40px;
-    text-transform: uppercase;
+#your-day-at-gallery-title {
+  font-family: var(--big-shoulders-font);
+  color: var(--almost-black-color);
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+}
+
+.day-at-gallery-subtext-par {
+  font-family: var(--outfit-light-font);
+  color: var(--dark-gray-color);
+  font-size: 18px;
+  line-height: 28px;
+  width: 343px;
+}
+
+/*Images Section*/
+.images-section {
+  width: 343px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tan-slab-bench-image {
+  height: 480px;
+}
+
+#people-watch-canvas-image {
+  height: 200px;
+}
+
+/*Come And Be Inspired Section*/
+#be-inspired-cta {
+  height: 293px;
+  background-color: var(--almost-black-color);
+}
+
+.be-inspired-text {
+  font-family: var(--big-shoulders-font);
+  color: var(--white-color);
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.be-inspired-subtext {
+  font-family: var(--outfit-light-font);
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: -20px;
+}
+
+.be-inspired-text,
+.be-inspired-subtext {
+  width: 295px;
+}
+
+/*Homepage Footer*/
+#homepage-footer {
+  width: 100%;
+  height: 336px;
+  margin-top: -260px; /*decreases space between footer and main content*/
+  background-color: var(--almost-black-color);
+}
+
+/*Keep Footer At Bottom of Page*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 336px; /*Footer height*/
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 336px;
+}
+
+/*Footer Text*/
+#homepage-footer-mad-text {
+  font-family: var(--big-shoulders-font);
+  color: var(--white-color);
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 110.05px;
+  padding-top: 30px;
+}
+
+#homepage-footer-mad-subtext{
+  font-family: var(--outfit-light-font);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 26px;
+  width: 311px;
+  padding-top: 10px;
+}
+
+#homepage-footer-mad-text,
+#homepage-footer-mad-subtext, 
+#homepage-footer-icons{
+  padding-left: 30px;
+}
+
+#homepage-footer-icons{
+    display: flex;
+    gap: 25px;
+    padding-top: 30px;
 }
