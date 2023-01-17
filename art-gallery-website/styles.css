@@ -233,6 +233,9 @@ h1 {
 
 }
 
+
+
+
 /*Tablet Devices*/
 @media (min-width: 690px) {
   #content-wrap {
@@ -356,10 +359,16 @@ h1 {
 #homepage-footer{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  padding-top: 30px;
   height: 200px;
   position: absolute;
   bottom: 0;
+}
+
+#homepage-footer-mad-subtext {
+  font-size: 16px;
+  line-height: 26px;
+  width: 281px;
 }
 
 }
