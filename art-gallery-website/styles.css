@@ -210,6 +210,28 @@ h1 {
 }
 
 /*MEDIA QUERIES*/
+/*Mobile Devices*/
+@media(max-width: 690px){
+
+  /*Centers content for mobile*/
+ .day-at-gallery-section,
+ #canvas-images-and-inspired-group,
+ #canvas-and-inspired-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .hero-subtext-par{
+    margin-top: -20px;
+ }
+
+ .day-at-gallery-subtext-par{
+    margin-top: 60px;
+ }
+
+}
 
 /*Tablet Devices*/
 @media (min-width: 690px) {
