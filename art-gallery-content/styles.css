@@ -311,11 +311,10 @@ h1 {
 }
 
 
-
 /*Tablet Devices*/
-/*Between 540px and 689px
+/*Between 530px and 689px
 Fix inspired and footer text sections*/
-@media (min-width: 540px) and (max-width: 689px) {
+@media (min-width: 530px) and (max-width: 689px) {
   #homepage-footer-mad-text,
   #homepage-footer-mad-subtext {
     width: 400px;
