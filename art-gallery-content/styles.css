@@ -209,125 +209,131 @@ h1 {
   padding-top: 30px;
 }
 
-
-
 /*MEDIA QUERIES*/
 /*max-number and below 
   min-number and above*/
 
 /*Mobile Devices*/
 /*689 and below*/
-@media(max-width: 689px){
+@media (max-width: 689px) {
   /*Centers content for mobile*/
-   .day-at-gallery-section,
-   #canvas-images-and-inspired-group,
-   #canvas-and-inspired-section{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-   .hero-subtext-par{
-      margin-top: -20px;
-   }
-  
-   .day-at-gallery-subtext-par{
-      margin-top: 60px;
-   }
-  
+  .day-at-gallery-section,
+  #canvas-images-and-inspired-group,
+  #canvas-and-inspired-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-
-/*350 and below*/
-@media(max-width: 350px){
-
-  #mod-art-gallery-title,
-  #your-day-at-gallery-title{
-    font-size: 50px;
+  .hero-subtext-par {
+    margin-top: -20px;
   }
 
-  .hero-subtext-par,
- .day-at-gallery-subtext-par{
-    font-size: 16px;
-    width: 320px;
- }
-
- #canvas-walls-image,
- #tan-slab-bench-image,
- #people-watch-canvas-image{
-  width: 330px;
- }
-
+  .day-at-gallery-subtext-par {
+    margin-top: 60px;
+  }
 }
 
-/*320 and below*/
-@media(max-width: 320px){
+/*350 and below*/
+@media (max-width: 350px) {
   /*Hero title and subtext*/
   #mod-art-gallery-title,
-  #your-day-at-gallery-title{
+  #your-day-at-gallery-title {
     font-size: 40px;
   }
 
-  .hero-subtext-par{
+  .hero-subtext-par {
     font-size: 15px;
     width: 280px;
- }
+  }
 
- /*Images*/
- #canvas-walls-image,
- #tan-slab-bench-image,
- #people-watch-canvas-image{
-  width: 300px;
- }  
+  /*Images*/
+  #canvas-walls-image,
+  #tan-slab-bench-image,
+  #people-watch-canvas-image {
+    width: 300px;
+  }
 
- /*Gallery title and subtext*/
- #your-day-at-gallery-title,
- .day-at-gallery-subtext-par{
-  width: 260px;
+  /*Gallery title and subtext*/
+  #your-day-at-gallery-title,
+  .day-at-gallery-subtext-par {
+    width: 260px;
+  }
 
- }
+  /*Inspired section title and subtext*/
+  .be-inspired-text,
+  .be-inspired-subtext {
+    width: 280px;
+    margin-left: 40px;
+  }
 
- /*Inspired section title and subtext*/
- .be-inspired-text,
- .be-inspired-subtext {
-   width: 280px;
-   margin-left: 40px;
- }
+  /*Footer subtext*/
+  #homepage-footer-mad-subtext {
+    width: 260px;
+  }
+}
 
- /*Footer subtext*/
- #homepage-footer-mad-subtext{
-  width: 260px;
- }
+/*318 and below*/
+@media (max-width: 318px) {
+  /*Gallery title and subtext*/
+  #your-day-at-gallery-title,
+  .day-at-gallery-subtext-par {
+    width: 230px;
+  }
 
+  /*Hero Subtext*/
+  .hero-subtext-par {
+    width: 220px;
+  }
+
+  /*Location*/
+  #location-bar {
+    position: relative;
+    right: 20px;
+  }
+
+  /*Images*/
+  #canvas-walls-image,
+  #tan-slab-bench-image,
+  #people-watch-canvas-image {
+    width: 260px;
+  }
+}
+
+/*274 and below*/
+@media (min-width: 274px) {
+
+  .be-inspired-subtext,
+  #homepage-footer-mad-subtext{
+    width: 235px;
+  }
 }
 
 
-/*Tablet Devices*/ 
-/*Between 580px and 689px
-Fix inspired and footer text sections*/
-@media(min-width: 540px) and (max-width: 689px){
 
+/*Tablet Devices*/
+/*Between 540px and 689px
+Fix inspired and footer text sections*/
+@media (min-width: 540px) and (max-width: 689px) {
   #homepage-footer-mad-text,
-  #homepage-footer-mad-subtext{
+  #homepage-footer-mad-subtext {
     width: 400px;
   }
 
-#be-inspired-section{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
+  #be-inspired-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.be-inspired-subtext{
-  margin-top: 20px;
-  margin-left: -15px;
-  margin-right: 10px;
-  width: 320px;
+  .be-inspired-subtext {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: 10px;
+    width: 320px;
+  }
 }
-
-}
-
 
 /*690px and above*/
 @media (min-width: 690px) {
@@ -437,31 +443,30 @@ Fix inspired and footer text sections*/
     margin-top: -8px;
   }
 
-  #canvas-and-inspired-section{
+  #canvas-and-inspired-section {
     margin-top: 35px;
   }
 
-#all-sections-groups{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  #all-sections-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-/*Tablet-Footer*/
-#homepage-footer{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  height: 200px;
-  position: absolute;
-  bottom: 0;
-}
+  /*Tablet-Footer*/
+  #homepage-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+  }
 
-#homepage-footer-mad-subtext {
-  font-size: 16px;
-  line-height: 26px;
-  width: 281px;
-}
-
+  #homepage-footer-mad-subtext {
+    font-size: 16px;
+    line-height: 26px;
+    width: 281px;
+  }
 }
