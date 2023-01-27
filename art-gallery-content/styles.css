@@ -209,7 +209,12 @@ h1 {
   padding-top: 30px;
 }
 
+
+
 /*MEDIA QUERIES*/
+/*max-number and below 
+  min-number and above*/
+  
 /*Mobile Devices*/
 @media(max-width: 690px){
 
@@ -232,9 +237,6 @@ h1 {
  }
 
 }
-
-
-
 
 /*Tablet Devices*/
 @media (min-width: 690px) {
