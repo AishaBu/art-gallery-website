@@ -214,31 +214,122 @@ h1 {
 /*MEDIA QUERIES*/
 /*max-number and below 
   min-number and above*/
-  
-/*Mobile Devices*/
-@media(max-width: 690px){
 
+/*Mobile Devices*/
+/*689 and below*/
+@media(max-width: 689px){
   /*Centers content for mobile*/
- .day-at-gallery-section,
- #canvas-images-and-inspired-group,
- #canvas-and-inspired-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   .day-at-gallery-section,
+   #canvas-images-and-inspired-group,
+   #canvas-and-inspired-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+   .hero-subtext-par{
+      margin-top: -20px;
+   }
+  
+   .day-at-gallery-subtext-par{
+      margin-top: 60px;
+   }
+  
   }
 
- .hero-subtext-par{
-    margin-top: -20px;
+
+/*350 and below*/
+@media(max-width: 350px){
+
+  #mod-art-gallery-title,
+  #your-day-at-gallery-title{
+    font-size: 50px;
+  }
+
+  .hero-subtext-par,
+ .day-at-gallery-subtext-par{
+    font-size: 16px;
+    width: 320px;
  }
 
- .day-at-gallery-subtext-par{
-    margin-top: 60px;
+ #canvas-walls-image,
+ #tan-slab-bench-image,
+ #people-watch-canvas-image{
+  width: 330px;
  }
 
 }
 
-/*Tablet Devices*/
+/*320 and below*/
+@media(max-width: 320px){
+  /*Hero title and subtext*/
+  #mod-art-gallery-title,
+  #your-day-at-gallery-title{
+    font-size: 40px;
+  }
+
+  .hero-subtext-par{
+    font-size: 15px;
+    width: 280px;
+ }
+
+ /*Images*/
+ #canvas-walls-image,
+ #tan-slab-bench-image,
+ #people-watch-canvas-image{
+  width: 300px;
+ }  
+
+ /*Gallery title and subtext*/
+ #your-day-at-gallery-title,
+ .day-at-gallery-subtext-par{
+  width: 260px;
+
+ }
+
+ /*Inspired section title and subtext*/
+ .be-inspired-text,
+ .be-inspired-subtext {
+   width: 280px;
+   margin-left: 40px;
+ }
+
+ /*Footer subtext*/
+ #homepage-footer-mad-subtext{
+  width: 260px;
+ }
+
+}
+
+
+/*Tablet Devices*/ 
+/*Between 580px and 689px
+Fix inspired and footer text sections*/
+@media(min-width: 540px) and (max-width: 689px){
+
+  #homepage-footer-mad-text,
+  #homepage-footer-mad-subtext{
+    width: 400px;
+  }
+
+#be-inspired-section{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.be-inspired-subtext{
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: 10px;
+  width: 320px;
+}
+
+}
+
+
+/*690px and above*/
 @media (min-width: 690px) {
   #content-wrap {
     display: block;
