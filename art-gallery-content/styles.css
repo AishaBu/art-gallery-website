@@ -27,7 +27,7 @@ html {
 
 /*Modern Art Gallery Section*/
 /*Set rectangle to display none initally*/
-#rectangle-placeholder{
+#rectangle-placeholder {
   display: none;
 }
 
@@ -39,12 +39,11 @@ html {
 h1 {
   font-family: var(--big-shoulders-font);
   color: var(--almost-black-color);
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-size: 60px;
   line-height: 55px;
   width: 343px;
 }
-
 
 /*Hero subtext*/
 .hero-subtext-par {
@@ -251,11 +250,11 @@ h1 {
     font-size: 40px;
   }
 
-  #modern-art-gallery-section{
+  #modern-art-gallery-section {
     width: 260px;
   }
 
-  .hero-subtext-par{
+  .hero-subtext-par {
     width: 300px;
   }
 
@@ -314,25 +313,22 @@ h1 {
 
 /*300 and below*/
 @media (max-width: 300px) {
-
   .be-inspired-subtext,
-  #homepage-footer-mad-subtext{
+  #homepage-footer-mad-subtext {
     width: 235px;
   }
 }
-
 
 /*Tablet Devices*/
 /*Between 530px and 689px
 Fix inspired and footer text sections*/
 @media (min-width: 530px) and (max-width: 689px) {
-
-  #be-inspired-section{
+  #be-inspired-section {
     display: flex;
-    align-items:center; 
-  } 
+    align-items: center;
+  }
 
-  .be-inspired-subtext{
+  .be-inspired-subtext {
     margin-left: -2px;
   }
 }
@@ -349,7 +345,7 @@ Fix inspired and footer text sections*/
     object-fit: contain;
   }
 
-  .hero-subtext-par{
+  .hero-subtext-par {
     width: 339px;
     font-size: 18px;
     line-height: 28px;
@@ -462,12 +458,10 @@ Fix inspired and footer text sections*/
     justify-content: center;
     align-items: center;
   }
-
 }
 
 /*Footer Tablet*/
-@media(min-width: 580px){
-
+@media (min-width: 580px) {
   /*Tablet-Footer*/
   #homepage-footer {
     display: flex;
@@ -485,142 +479,152 @@ Fix inspired and footer text sections*/
   }
 }
 
-
-
 /*Desktop Devices*/
 /*1000 and above*/
-@media(min-width: 1000px){
-
-  #rectangle-placeholder{
-    width:450px;
+@media (min-width: 1000px) {
+  #rectangle-placeholder {
+    width: 450px;
     height: 799px;
     background-color: black;
-   
   }
 
-  #hero-old-woman-image{
+  #hero-old-woman-image {
     width: 540px;
     height: 800px;
   }
 
-  #hero-old-woman-image, 
-  #rectangle-placeholder{
+  #hero-old-woman-image,
+  #rectangle-placeholder {
     display: inline-block;
     margin: -12px;
-  } 
+  }
 
-  #mod-art-gallery-title{
+  #mod-art-gallery-title {
     color: white;
     width: 514px;
     font-size: 96px;
     line-height: 88px;
     position: relative;
     right: 160px;
+     /*Creates half colored text*/
+     background: linear-gradient(to right, white 50%, black 50%);
+     -webkit-background-clip: text;
+     background-clip: text; /*Fallback for chrome*/
+     -webkit-text-fill-color: transparent;
   }
 
-  .hero-subtext-par{
+  .hero-subtext-par {
     margin-bottom: 60px;
   }
 
-  #mod-subtext-and-location{
+  #mod-subtext-and-location {
     position: relative;
     left: 20px;
   }
 
-#modern-art-gallery-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  #modern-art-gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-}
 
-@media(min-width: 1000px) and (max-width: 1208px){
-  #mod-subtext-and-location{
+@media (min-width: 1000px) and (max-width: 1208px) {
+  #mod-subtext-and-location {
     position: relative;
     left: -150px;
   }
 
-  .hero-subtext-par{
+  .hero-subtext-par {
     width: 300px;
   }
 }
 
-@media(min-width: 1200px){
-/*Subtext and titles*/
-#your-day-at-gallery-title, 
-.hero-subtext-par,
-.day-at-gallery-subtext-par,
-.be-inspired-text,
-.be-inspired-subtext{
- width: 350px;
+@media(min-width: 1090px){
+
+  #mod-subtext-and-location {
+    position: relative;
+    left: -120px;
+  }
 }
 
-.hero-subtext-par{
- width: 340px;
-}
-
-.day-at-gallery-subtext-par,
-.hero-subtext-par,
-.be-inspired-subtext{
- font-size: 22px;
- line-height: 32px;
-}
-
-#canvas-walls-image{
-  width: 635px;
-  height: 800px;
-}
-
-#day-at-gallery-text-group,
-#canvas-walls-image{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#tan-slab-bench-image{
-  width: 635px;
-  height: 720px;
-}
-
-#people-watch-canvas-image{
-  width: 445px;
-  height: 313px;
-}
-
-#be-inspired-section{
-  width: 445px;
-  height: 377px;
-}
-
-#homepage-footer-mad-subtext{
-  width: 430px;
-}
-}
-
-@media(min-width: 1500px){
-
-  #rectangle-placeholder{
-    width:700px;
-    height: 799px;
-    background-color: black; 
+@media (min-width: 1200px) {
+  /*Subtext and titles*/
+  #your-day-at-gallery-title,
+  .hero-subtext-par,
+  .day-at-gallery-subtext-par,
+  .be-inspired-text,
+  .be-inspired-subtext {
+    width: 350px;
   }
 
-  #hero-old-woman-image{
+  .hero-subtext-par {
+    width: 340px;
+  }
+
+  .day-at-gallery-subtext-par,
+  .hero-subtext-par,
+  .be-inspired-subtext {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  #canvas-walls-image {
+    width: 635px;
+    height: 800px;
+  }
+
+  #day-at-gallery-text-group,
+  #canvas-walls-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #tan-slab-bench-image {
+    width: 635px;
+    height: 720px;
+  }
+
+  #people-watch-canvas-image {
+    width: 445px;
+    height: 313px;
+  }
+
+  #be-inspired-section {
+    width: 445px;
+    height: 377px;
+  }
+
+  #homepage-footer-mad-subtext {
+    width: 430px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #rectangle-placeholder {
+    width: 700px;
+    height: 799px;
+    background-color: black;
+  }
+
+  #hero-old-woman-image {
     width: 540px;
     height: 799px;
     margin-left: -40px;
   }
 
-  #mod-subtext-and-location{
+  #mod-subtext-and-location {
     position: relative;
     left: 230px;
   }
 
-  #mod-art-gallery-title{
+  #mod-art-gallery-title {
     position: relative;
-    right: -80px;
-  }
+    right: -50px;
+    font-size: 100px;
+    line-height: 110px;
+    width: 530px;
+}
 
 }
