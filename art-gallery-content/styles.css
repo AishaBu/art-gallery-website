@@ -26,6 +26,11 @@ html {
 }
 
 /*Modern Art Gallery Section*/
+/*Set rectangle to display none initally*/
+#rectangle-placeholder{
+  display: none;
+}
+
 #hero-old-woman-image {
   width: 100%;
 }
@@ -34,10 +39,12 @@ html {
 h1 {
   font-family: var(--big-shoulders-font);
   color: var(--almost-black-color);
+  text-transform: uppercase; 
   font-size: 60px;
-  text-transform: uppercase;
   line-height: 55px;
+  width: 343px;
 }
+
 
 /*Hero subtext*/
 .hero-subtext-par {
@@ -98,6 +105,7 @@ h1 {
   text-transform: uppercase;
   position: relative;
   top: 40px;
+  width: 343px;
 }
 
 .day-at-gallery-subtext-par {
@@ -243,9 +251,12 @@ h1 {
     font-size: 40px;
   }
 
-  .hero-subtext-par {
-    font-size: 15px;
-    width: 280px;
+  #modern-art-gallery-section{
+    width: 260px;
+  }
+
+  .hero-subtext-par{
+    width: 300px;
   }
 
   /*Images*/
@@ -301,8 +312,8 @@ h1 {
   }
 }
 
-/*274 and below*/
-@media (min-width: 274px) {
+/*300 and below*/
+@media (max-width: 300px) {
 
   .be-inspired-subtext,
   #homepage-footer-mad-subtext{
@@ -315,26 +326,18 @@ h1 {
 /*Between 530px and 689px
 Fix inspired and footer text sections*/
 @media (min-width: 530px) and (max-width: 689px) {
-  #homepage-footer-mad-text,
-  #homepage-footer-mad-subtext {
-    width: 400px;
-  }
 
-  #be-inspired-section {
+  #be-inspired-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    align-items:center; 
+  } 
 
-  .be-inspired-subtext {
-    margin-top: 20px;
-    margin-left: -15px;
-    margin-right: 10px;
-    width: 320px;
+  .be-inspired-subtext{
+    margin-left: -2px;
   }
 }
 
-/*690px and above*/
+/*Tablet 690px and above*/
 @media (min-width: 690px) {
   #content-wrap {
     display: block;
@@ -346,19 +349,26 @@ Fix inspired and footer text sections*/
     object-fit: contain;
   }
 
+  .hero-subtext-par{
+    width: 339px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   /*Tablet-Modern Art Gallery Section*/
   #modern-art-gallery-section {
     position: absolute;
     top: 0;
+    left: 35px;
     margin-left: 300px;
     margin-top: 60px;
-    width: 339px;
     height: 410px;
   }
 
   #mod-art-gallery-title {
     font-size: 70px;
     line-height: 65px;
+    width: 339px;
   }
 
   /*Tablet-Day At Gallery Section*/
@@ -453,6 +463,11 @@ Fix inspired and footer text sections*/
     align-items: center;
   }
 
+}
+
+/*Footer Tablet*/
+@media(min-width: 580px){
+
   /*Tablet-Footer*/
   #homepage-footer {
     display: flex;
@@ -468,4 +483,144 @@ Fix inspired and footer text sections*/
     line-height: 26px;
     width: 281px;
   }
+}
+
+
+
+/*Desktop Devices*/
+/*1000 and above*/
+@media(min-width: 1000px){
+
+  #rectangle-placeholder{
+    width:450px;
+    height: 799px;
+    background-color: black;
+   
+  }
+
+  #hero-old-woman-image{
+    width: 540px;
+    height: 800px;
+  }
+
+  #hero-old-woman-image, 
+  #rectangle-placeholder{
+    display: inline-block;
+    margin: -12px;
+  } 
+
+  #mod-art-gallery-title{
+    color: white;
+    width: 514px;
+    font-size: 96px;
+    line-height: 88px;
+    position: relative;
+    right: 160px;
+  }
+
+  .hero-subtext-par{
+    margin-bottom: 60px;
+  }
+
+  #mod-subtext-and-location{
+    position: relative;
+    left: 20px;
+  }
+
+#modern-art-gallery-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+}
+
+@media(min-width: 1000px) and (max-width: 1208px){
+  #mod-subtext-and-location{
+    position: relative;
+    left: -150px;
+  }
+
+  .hero-subtext-par{
+    width: 300px;
+  }
+}
+
+@media(min-width: 1200px){
+/*Subtext and titles*/
+#your-day-at-gallery-title, 
+.hero-subtext-par,
+.day-at-gallery-subtext-par,
+.be-inspired-text,
+.be-inspired-subtext{
+ width: 350px;
+}
+
+.hero-subtext-par{
+ width: 340px;
+}
+
+.day-at-gallery-subtext-par,
+.hero-subtext-par,
+.be-inspired-subtext{
+ font-size: 22px;
+ line-height: 32px;
+}
+
+#canvas-walls-image{
+  width: 635px;
+  height: 800px;
+}
+
+#day-at-gallery-text-group,
+#canvas-walls-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tan-slab-bench-image{
+  width: 635px;
+  height: 720px;
+}
+
+#people-watch-canvas-image{
+  width: 445px;
+  height: 313px;
+}
+
+#be-inspired-section{
+  width: 445px;
+  height: 377px;
+}
+
+#homepage-footer-mad-subtext{
+  width: 430px;
+}
+}
+
+@media(min-width: 1500px){
+
+  #rectangle-placeholder{
+    width:700px;
+    height: 799px;
+    background-color: black; 
+  }
+
+  #hero-old-woman-image{
+    width: 540px;
+    height: 799px;
+    margin-left: -40px;
+  }
+
+  #mod-subtext-and-location{
+    position: relative;
+    left: 230px;
+  }
+
+  #mod-art-gallery-title{
+    position: relative;
+    right: -80px;
+  }
+
 }
