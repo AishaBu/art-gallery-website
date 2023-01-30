@@ -15,5 +15,6 @@
 .DS_Store
 .prettierignore
 
-#ignore README guide and template files for now*/
-*.md
+#ignore README guide for now*/
+*README.md
+
