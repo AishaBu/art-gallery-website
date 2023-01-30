@@ -16,5 +16,5 @@
 .prettierignore
 
 #ignore README guide for now*/
-*README.md
+*README-guide.md
 
