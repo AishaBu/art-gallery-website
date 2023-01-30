@@ -297,12 +297,6 @@ h1 {
     width: 220px;
   }
 
-  /*Location*/
-  #location-bar {
-    position: relative;
-    right: 20px;
-  }
-
   /*Images*/
   #canvas-walls-image,
   #tan-slab-bench-image,
