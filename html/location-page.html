@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/location-page-styles.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/footer-styles.css" />
     <script src="../scripts/location-page.js" defer></script>
     <title>Location-Art Gallery Website</title>
     <!--Fonts-->
@@ -19,6 +18,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet" />
+
+    <!--Leaflet-->
+    <!--Leaflet CSS File-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <!--Leaflet JS File-->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   </head>
 
   <body>
@@ -36,6 +45,27 @@
                 </span>
                 <h2 id="back-home-text">Back To Home</h2>
               </div>
+            </section>
+
+            <!--Leaflet Map-->
+            <div id="leaflet-map"></div>
+
+            <!--Our Location Info Section-->
+            <section id="our-location-info-section">
+              <h1 id="our-location-section-text">Our Location</h1>
+              <address>
+                <p id="addess-street-name"> 99 King Street</p>
+                <p id="address-city-state-country">
+                  Newport<br>
+                  RI 02840<br>
+                  United States of America
+                </p>
+                <p id="address-paragraph">
+                  Our newly opened gallery is located near the Edward King House on 99 King
+                  Street, the Modern Art Gallery is free to all visitors and open seven days
+                  a week from 8am to 9pm.
+                </p>
+              </address>
             </section>
           </div>
         </div>
@@ -78,22 +108,3 @@
   </body>
 
 </html>
-
-<!-- Back to Home
-
-    Our location
-
-    99 King Street
-    Newport
-    RI 02840
-    United States of America
-
-    Our newly opened gallery is located near the Edward King House on 99 King
-    Street, the Modern Art Gallery is free to all visitors and open seven days
-    a week from 8am to 9pm.
-
-    Modern Art Gallery
-
-    The Modern Art Gallery is free to all visitors and open seven days a week
-    from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-  -->

@@ -30,6 +30,7 @@
 .back-home-section{
   position: relative;
   right: 60px;
+  display: none;
 }
 
 #back-home-text{
@@ -75,3 +76,161 @@
   left: -52px;
 }
 
+
+/*LEAFLET MAP*/
+#leaflet-map { 
+  width:100%;
+  height: 550px; 
+}
+
+/*Location Info Section*/
+#our-location-info-section{
+  width: 100%;
+  height: 493px;
+  background-color: var(--almost-black-color);
+}
+
+#our-location-section-text{
+  color: var(--white-color);
+  font-family: var(--big-shoulders-font);
+  font-size: 50px;
+  line-height: 45px;
+  width: 343px;
+  text-transform: uppercase;
+}
+
+
+/*FOOTER*/
+/*Same Footer As Location Page*/
+#homepage-footer {
+  width: 100%;
+  height: 336px;
+  margin-top: -40px; /*decreases space between footer and main content*/
+  background-color: var(--gold-color);
+}
+
+/*Keep Footer At Bottom of Page*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/*Footer Text*/
+#homepage-footer-mad-text {
+  font-family: var(--big-shoulders-font);
+  color: var(--almost-black-color);
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 110.05px;
+  padding-top: 30px;
+}
+
+#homepage-footer-mad-subtext {
+  font-family: var(--outfit-light-font);
+  color: var(--almost-black-color);
+  font-size: 16px;
+  line-height: 26px;
+  width: 311px;
+  padding-top: 10px;
+}
+
+#homepage-footer-mad-text,
+#homepage-footer-mad-subtext,
+#homepage-footer-icons {
+  padding-left: 30px;
+}
+
+#homepage-footer-icons {
+  display: flex;
+  gap: 25px;
+  padding-top: 30px;
+}
+
+#homepage-footer-icons path{
+  fill: var(--almost-black-color);
+}
+
+/*Footer Hover*/
+#homepage-footer-icons path:hover{
+  fill: var(--white-color);
+}
+
+/*Location Info Section*/
+address{
+  font-style: normal;
+  width: 343px;
+}
+
+#our-location-info-section{
+ padding-left: 60px;
+}
+
+#addess-street-name{
+  font-size: 32px;
+  line-height: 32px;
+  font-family: var(--big-shoulders-font);
+  color: var(--gold-color);
+  text-transform: uppercase;
+}
+
+#address-city-state-country,
+#address-paragraph{
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--outfit-light-font);
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES-Location*/
+/*max-number and below 
+  min-number and above*/
+/*Mobile Devices*/
+
+/*350 and below*/
+@media (max-width: 350px) {
+
+  /*Footer subtext*/
+  #homepage-footer-mad-subtext {
+    width: 260px;
+  }
+}
+
+/*300 and below*/
+@media (max-width: 300px) {
+  #homepage-footer-mad-subtext {
+    width: 235px;
+  }
+}
+
+/*Tablet Devices - Footer*/
+@media (min-width: 580px) {
+  #homepage-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    height: 200px;
+  }
+
+  #homepage-footer-mad-subtext {
+    font-size: 16px;
+    line-height: 26px;
+    width: 281px;
+  }
+
+}
+
+/*Desktop Footer*/
+@media (min-width: 1200px) {
+  
+  #homepage-footer-mad-subtext {
+    width: 430px;
+  }
+}
