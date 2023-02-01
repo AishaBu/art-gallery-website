@@ -1,7 +1,7 @@
 const locationBar = document.getElementById('location-bar');
 const locationArrow = document.getElementById('location-arrow');
 
-/*LOCATION HOVER*/
+/*LOCATION BAR HOVER*/
 /*Create color swap on hover of location bar - on mouuseenter*/
 locationBar.onmouseover = function(){
     locationBar.style.backgroundColor = "#d5966c";
@@ -13,6 +13,3 @@ locationBar.onmouseleave = function(){
     locationBar.style.backgroundColor = "#151515";
     locationArrow.style.backgroundColor = "#d5966c";
 }
-
-
-

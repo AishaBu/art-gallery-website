@@ -1,0 +1,77 @@
+/*Global Variables*/
+:root {
+    --big-shoulders-font: "Big Shoulders Display", cursive;
+    --outfit-light-font: "Outfit", sans-serif;
+    --almost-black-color: #151515;
+    --dark-gray-color: #444444;
+    --white-color: #ffffff;
+    --gold-color: #d5966c;
+  }
+  
+  /*CSS Resets*/
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+/*LOCATION PAGE*/
+/*Main Content*/
+#content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Back Home Bar*/
+.back-home-section{
+  position: relative;
+  right: 60px;
+}
+
+#back-home-text{
+  color: var(--white-color);
+  font-family: var(--big-shoulders-font);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: 50px;
+}
+
+#back-home-bar {
+  width: 204px;
+  height: 72px;
+  background-color: var(--almost-black-color);
+}
+
+#back-home-bar,
+#back-home-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-home-text{
+  color: var(--white-color);
+  font-family: var(--big-shoulders-font);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: -20px;
+}
+
+#back-home-arrow {
+  width: 56px;
+  height: 72px;
+  background-color: var(--gold-color);
+  position: relative;
+  left: -52px;
+}
+

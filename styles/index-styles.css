@@ -68,7 +68,7 @@ h1 {
   align-items: center;
 }
 
-#our-location-text {
+#our-location-text{
   color: var(--white-color);
   font-family: var(--big-shoulders-font);
   font-weight: 900;
