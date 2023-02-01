@@ -87,24 +87,6 @@ h1 {
   left: 56px;
 }
 
-/*Active - On Hover*/
-/*Location Bar on Hover*
-#location-bar:hover {
-  background-color: var(--gold-color);
-  z-index: 2px;
-}
-
-/*Location Arrow on Hover*
-#location-arrow:hover{
-  background-color: var(--almost-black-color);
-  z-index: 1;
-}
-*/
-
-
-
-
-
 
 /*Day At Gallery Section*/
 #canvas-walls-image {
