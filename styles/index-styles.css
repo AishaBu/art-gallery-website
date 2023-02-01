@@ -217,6 +217,12 @@ h1 {
   padding-top: 30px;
 }
 
+/*Footer Hover*/
+path:hover{
+  fill: var(--gold-color);
+}
+
+
 /*MEDIA QUERIES*/
 /*max-number and below 
   min-number and above*/
