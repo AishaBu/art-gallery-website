@@ -1,4 +1,23 @@
-/*Leaflet Map*/ /*Create Map With Coordinates*/
+/*BACK HOME ARROW*/
+const backHomeBar = document.getElementById("back-home-bar");
+const backHomeArrow = document.getElementById("back-home-arrow");
+
+/*Create color swap on hover of location bar - on mouuseenter*/
+backHomeBar.onmouseover = function () {
+  backHomeBar.style.backgroundColor = "#d5966c";
+  backHomeArrow.style.backgroundColor = "#151515";
+};
+
+/*Remove color swap hover - on mouseleave*/
+backHomeBar.onmouseleave = function () {
+  backHomeBar.style.backgroundColor = "#151515";
+  backHomeArrow.style.backgroundColor = "#d5966c";
+};
+
+
+
+/*Leaflet Map*/ 
+/*Create Map With Coordinates*/
 const leafletMap = L.map('leaflet-map').setView([41.4815, -71.3103], 16);
 
 /*Add Open Street Map Tiles*/
