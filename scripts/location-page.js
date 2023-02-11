@@ -15,11 +15,11 @@ backHomeBar.onmouseleave = function(){
 }
 
 /*Leaflet Map*/ /*Create Map With Coordinates*/
-const leafletMap = L.map('leaflet-map').setView([41.4815, -71.3103], 17);
+const leafletMap = L.map('leaflet-map').setView([41.4815, -71.3103], 16);
 
 /*Add Open Street Map Tiles*/
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom:17,
+    minZoom:16,
     maxZoom: 20,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 
