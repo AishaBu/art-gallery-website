@@ -30,7 +30,8 @@
 .back-home-section{
   position:absolute;
   top: 0;
-  left: 50px;
+  left: 40px;
+  cursor: pointer;
 }
 
 #back-home-text{
@@ -45,7 +46,7 @@
 }
 
 #back-home-bar {
-  width: 204px;
+  width: 208px;
   height: 72px;
   background-color: var(--almost-black-color);
 }
