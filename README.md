@@ -1,114 +1,90 @@
-# Frontend Mentor - Art gallery website solution
-
-This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Art Gallery Website Solution
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Description](#description)
+  - [Features](#features)
+  <!-- [Screenshot](#screenshot)
+  - [Links](#links)-->
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Description
 
-## Overview
+This project builds a two-page art gallery website that showcases photos from an art gallery on one page and provides text description of the art gallerys and a map of its location on a second page. For the project, Frontend Mentor provides the design files with either Figma or Sketch, starter code, which includes plain text and any assests such as optimized images or font files in an assets folder, the images are already exported for the correct screen size and optimized, and the prompt which explains what features the project should have. You are free to use whatever tools you would like to build the project, and are challenged to use Leaflet to create an interactive location map of the art gallery rather than using the image of a map.
 
-### The challenge
+### Features
 
 Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
-- **Bonus**: Use [Leaflet JS](https://leafletjs.com/) to create an interactive location map with custom location pin
+- View a location map with custom location pin
 
-### Screenshot
+<!--### Screenshot
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-->
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Semantic HTML5 markup <br>
+- CSS custom properties <br>
+- Flexbox<br>
+- CSS Grid<br>
+- Mobile-first workflow<br>
+- JavaScript<br>
+- [Prettier Code Formatter VS Extension](https://prettier.io/)<br>
+- [Leaflet JS Map Library](https://leafletjs.com/)<br>
+- [Visual Studio Code IDE](https://code.visualstudio.com/)<br>
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to use CSS variables,(CSS custom properties), how to use media queries in html along with the picture element to pick the best image size and based on users device width. I also learned more Leaflet features, such as how to use a custom marker in place of the default marker, and how to change positioning of the zoom controls.
 
-To see how you can add code snippets, see below:
+```HTML Picture Element with CSS Media Queries
+{
+       <picture>
+          <source srcset="
+          /assets/tablet/image-hero.jpg 1x,
+          /assets/tablet/image-hero@2x.jpg 2x" media="(min-width: 690px)" />
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+          <source srcset="
+          /assets/desktop/image-hero.jpg 1x,
+          /assets/desktop/image-hero@2x 2x" media="(min-width: 1000px)" />
+
+          <img srcset="
+          /assets/mobile/image-hero.jpg 1x,
+          /assets/mobile/image-hero@2x.jpg 2x"
+            alt="A black and white canvas art piece of an old woman looking ahead, not smiling, with rust brown glasses"
+            id="hero-old-woman-image" />
+        </picture>
+  }
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```CSS Variables (CSS Custom Properties)
+{
+  :root {
+    --big-shoulders-font: "Big Shoulders Display", cursive;
+    --outfit-light-font: "Outfit", sans-serif;
+    --almost-black-color: #151515;
+    --dark-gray-color: #444444;
+    --white-color: #ffffff;
+    --gold-color: #d5966c;
+      }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+<!--
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+  -->
