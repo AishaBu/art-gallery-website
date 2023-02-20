@@ -49,6 +49,8 @@ Users should be able to:
 
 I learned how to use CSS variables,(CSS custom properties), how to use media queries in html along with the picture element to pick the best image size and based on users device width. I also learned more Leaflet features, such as how to use a custom marker in place of the default marker, and how to change positioning of the zoom controls.
 
+HTML Picture Element with CSS Media Queries
+
 ```HTML Picture Element with CSS Media Queries
 {
        <picture>
@@ -68,6 +70,8 @@ I learned how to use CSS variables,(CSS custom properties), how to use media que
         </picture>
   }
 ```
+
+CSS Variables (CSS Custom Properties)
 
 ```CSS Variables (CSS Custom Properties)
 {
