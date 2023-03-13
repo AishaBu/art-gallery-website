@@ -209,6 +209,7 @@ h1 {
   display: flex;
   gap: 25px;
   padding-top: 30px;
+  cursor: pointer;
 }
 
 /*Footer Hover*/
