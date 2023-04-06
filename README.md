@@ -1,18 +1,22 @@
-# Art Gallery Website Solution
+# Art Gallery Website
+
+<table>
+    <tr>
+    <td><img src="/assets/art-gallery-image-desktop.png"></td>
+    </tr>
+</table>
 
 ## Table of contents
 
 - [Description](#description)
-  - [Features](#features)
-  <!-- [Screenshot](#screenshot)
-  - [Links](#links)-->
+  - [Features](#features) -[Live Site](#live-site)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 
 ## Description
 
-This project builds a two-page art gallery website that showcases photos from an art gallery on one page and provides text description of the art gallerys and a map of its location on a second page. For the project, Frontend Mentor provides the design files with either Figma or Sketch, starter code, which includes plain text and any assests such as optimized images or font files in an assets folder, the images are already exported for the correct screen size and optimized, and the prompt which explains what features the project should have. You are free to use whatever tools you would like to build the project, and are challenged to use Leaflet to create an interactive location map of the art gallery rather than using the image of a map.
+This project is a two-page art gallery website that showcases photos from an art gallery and provides an introductory description of the art gallery on one page and a leaflet map of its location, and textual data of the location on a second page. The art-gallery website was created with HTML, CSS, JavaScript, and Leaflet JS, and deployed with Netlify. The design files, assets, and feature requirements for this project are provided by Frontend Mentor, a professional platform that provides design and project briefs to build projects with.
 
 ### Features
 
@@ -22,14 +26,9 @@ Users should be able to:
 - See hover states for all interactive elements throughout the site
 - View a location map with custom location pin
 
-<!--### Screenshot
+### Live Site
 
-![](./screenshot.jpg)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
--->
+-[Live Site](https://modern-art-gallery-website-aishabu.netlify.app/)
 
 ## My process
 
@@ -86,9 +85,6 @@ CSS Variables (CSS Custom Properties)
 }
 ```
 
-<!--
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-  -->
+- Website - [AishaBu Portfolio](https://aishabu-portfolio.netlify.app/)
