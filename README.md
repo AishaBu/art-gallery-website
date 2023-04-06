@@ -9,7 +9,8 @@
 ## Table of contents
 
 - [Description](#description)
-  - [Features](#features) -[Live Site](#live-site)
+- [Features](#features)
+- [Live Site](#live-site)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -28,7 +29,7 @@ Users should be able to:
 
 ### Live Site
 
--[Live Site](https://modern-art-gallery-website-aishabu.netlify.app/)
+[Live Site](https://modern-art-gallery-website-aishabu.netlify.app/)
 
 ## My process
 
